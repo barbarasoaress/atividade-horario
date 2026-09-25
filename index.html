@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercício</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script src="script.js"></script>
+    <meta name="description" content="Confira o horário do dia com ilustrações de manhã, tarde e noite. Exercício de HTML, CSS e JavaScript.">
+    <title>Horário do Dia</title>
+    <link rel="stylesheet" href="estilo.css?v=3">
+    <script src="script.js" defer></script>
 </head>
 <body onload="carregar()">
-    <header> <!--cabeçalho-->
+    <header>
         <h1>Horário do Dia</h1>
     </header>
-    <section>
-        <div id="msg">
-            Aqui vai aparecer a  mensagem...
-        </div>
+    <main aria-label="Horário e ilustração do período do dia">
+        <p id="msg">Consultando o horário...</p>
         <div id="foto">
-            <img id="imagem" src="fotomanha.png" alt="Foto do dia">
+            <img id="imagem" src="fotomanha.png" alt="Paisagem ilustrada do período do dia" width="300" height="300">
         </div>
-    </section>
-    <footer> <!--rodapé-->
-        <p>&copy; CursoemVideo</p>
+        <noscript>Ative o JavaScript para mostrar o horário local e a imagem correspondente.</noscript>
+    </main>
+    <footer>
+        <p>Bárbara Soares · Exercício do Curso em Vídeo</p>
     </footer>
 </body>
 </html>
