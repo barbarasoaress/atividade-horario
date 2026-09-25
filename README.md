@@ -12,19 +12,23 @@ Exercício desenvolvido a partir das aulas de JavaScript do **Curso em Vídeo**,
 
 ## Como funciona
 
-Ao carregar a página, a função `carregar()` exibe a hora definida no código e seleciona o visual correspondente:
+Ao carregar a página, a função `carregar()` exibe a hora local do dispositivo e seleciona o visual correspondente:
 
 - **Manhã:** das 0h às 11h.
 - **Tarde:** das 12h às 17h.
 - **Noite:** a partir das 18h.
 
-**Estado atual:** a hora está fixada em `20` no arquivo `script.js` para testar o cenário noturno. Para usar a hora local do dispositivo no momento em que a página é aberta, substitua `const hora = 20` por `const hora = data.getHours()` e remova a linha comentada equivalente. A página não atualiza a hora continuamente; recarregue-a para obter um novo valor.
+A hora local é consultada ao abrir a página. Recarregue para atualizar o horário. O layout se adapta à largura da tela e as imagens têm largura máxima de 300 pixels.
 
 ## Tecnologias e conceitos praticados
 
 - **HTML5:** estrutura da página.
 - **CSS3:** cores, alinhamento, bordas e sombras.
 - **JavaScript:** funções, condições (`if` e `else`), manipulação do DOM e objeto `Date`.
+
+## Acesse o site
+
+[Ver o exercício Horário do Dia](https://barbarasoaress.github.io/atividade-horario/)
 
 ## Como executar
 
@@ -34,7 +38,7 @@ Ao carregar a página, a função `carregar()` exibe a hora definida no código 
    git clone https://github.com/barbarasoaress/atividade-horario.git
    ```
 
-2. Abra o arquivo `horario.html` no navegador.
+2. Abra o arquivo `index.html` no navegador.
 
 Não é necessário instalar dependências. Mantenha o HTML, o CSS, o JavaScript e as imagens na mesma pasta.
 
@@ -42,7 +46,7 @@ Não é necessário instalar dependências. Mantenha o HTML, o CSS, o JavaScript
 
 | Arquivo | Função |
 | --- | --- |
-| `horario.html` | Página principal do exercício |
+| `index.html` | Página principal do exercício |
 | `estilo.css` | Estilos da página |
 | `script.js` | Lógica dos períodos do dia |
 | `fotomanha.png` | Imagem da manhã |
