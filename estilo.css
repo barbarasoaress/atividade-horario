@@ -1,31 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: rgb(103, 103, 185);
-    font: normal 40pt Arial;
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px 20px 24px;
+    background: #e2cd9f;
+    color: #292b34;
+    font: 18px/1.5 Arial, sans-serif;
+    text-align: center;
 }
 
 header {
-    color: white;
-    text-align: center; /* centralizar texto */
+    margin-bottom: 24px;
 }
 
-section {
-    background: white;
-    border-radius: 10px; /* borda */
-    padding: 15px; /* espaço interno */
-    width: 1500px; /* largura */
-    margin: auto; /* centralizar*/
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404); /* sombra das bordas*/
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(28px, 6vw, 40px);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.28);
 }
 
-div {
-    text-align: center;
-    padding: 18px;
+main {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: clamp(20px, 5vw, 36px);
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.16);
+}
+
+#msg {
+    margin: 0 0 24px;
+    font-size: clamp(20px, 4.5vw, 26px);
+    font-weight: 600;
+}
+
+#imagem {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 footer {
-    color: white;
-    text-align: center; /* centralizar texto */
-    font-style: italic;
+    margin-top: 24px;
+    color: #292b34;
+    font-size: 14px;
 }
 
-
+footer p {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9);
+}
